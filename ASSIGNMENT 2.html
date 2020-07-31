@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 2</title>
+</head>
+<body>
+    <h2><mark>DIFFERENCE B/W var , let , const KEYWORDS IN JAVASCRIPT</mark></h2>
+    <script>
+        /* syntax - var varname = value ;
+           JavaScript uses reserved keyword var to declare a variable. A variable must have a unique name*/
+        var name="pranesh"
+        var age=20
+        var fields=["sports","research and development","machine learning","data science"]
+        var a= null;
+        console.log({name,age,fields,a});
+    
+    
+        /* let allows us to declare variables that are limited to the scope of a block statement,
+            or expression on which it is used, unlike the var keyword, which defines a variable globally, 
+            or locally to an entire function regardless of block scope.*/
+         {
+             let name="raghu"
+             let age= 56
+             console.log({name,age});
+         }
+         console.log({name,age});
+
+         /* const var_name=value;
+            The const keyword works like the let keyword. 
+            But the const keyword creates block-scoped variables whose values can't be reassigned.*/
+            const friends=["nitin","tejash"]
+            console.log(friends);
+            friends.push("pavan")
+        // VALUES CANNOT BE RE-ASSIGNED IN CONST
+            friends=["tejsah","nitin"]
+            console.log(friends);
+
+    </script>
+</body>
+</html>

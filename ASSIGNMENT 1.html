@@ -1,0 +1,54 @@
+// Asssignment 1
+// VARIOUS METHODS IN CONSOLE FUNCTION
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 1</title>
+</head>
+<body>
+    <h2><mark> WE ARE WORKING WITH DIFFERENT CONSOLE FUNCTIONS IN JAVASCRIPT</mark></h2>
+    
+    <script>
+      /*console.clear() Used to clear the console. The console will be cleared*/
+        console.clear()
+
+      /*console.log() : This method is mainly used to print the statements.
+        we can print a string , number , object , boolean values */
+      console.log("STRING - hello this is pranesh from India");
+      console.log("NUMBER - ",24)
+      console.log("OBJECT" , {name:"pranesh",age:20});
+      
+       /*console.error() Used to log error message to the console. Useful in testing of code.
+         By default the error message will be highlighted with red color.*/
+       console.error("HELLO !!!! RELAX")
+
+       /*console.warn() Used to log warning message to the console. 
+         By default the warning message will be highlighted with yellow color.*/
+       console.warn("you r using govt website")
+       console.warn("make sure that u have enterd valid details!!")
+        
+       /*console.time() and console.timeEnd() Whenever we want to know the amount of time
+        spend by a block or a function, we can make use of the time() and timeEnd() 
+        methods provided by the javascript console object.*/
+        console.time('abc'); 
+        console.time('abc'); 
+        let fun1 =  function(){ 
+        console.log('fun1 is running'); 
+        } 
+        let fun2 = function(){ 
+        console.log('fun2 is running..'); 
+        } 
+        fun1(); // calling fun(); 
+        fun2(); // calling fun2(); 
+        console.timeEnd('abc'); 
+  
+        
+    </script>
+    
+
+</body>
+</html>

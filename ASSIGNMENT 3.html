@@ -1,0 +1,55 @@
+/*  INTRO ON DIFFERENT BASIC DATATYPES IN JAVASCRIPT
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 3</title>
+</head>
+<body>
+    <h1><mark>BASIC DATA TYPES IN JAVASCRIPT </mark></h1>
+    <script>
+            /*1. NUMBERS - The number type represents both integer and floating point numbers.
+            There are many operations for numbers, e.g. multiplication *, division /, addition +, subtraction -*/
+            var n = 123;
+            console.log("NUMBER - " ,n);
+
+            /*2. STRING - A string in JavaScript must be surrounded by quotes.
+            In JavaScript, there are 3 types of quotes.
+               Double quotes: "Hello".
+               Single quotes: 'Hello'.
+               Backticks: `Hello`.*/
+            let str = "Hello";
+            let str2 = 'INDIA WON THE MATCH';
+            console.log("STRING - ",{str,str2});
+
+            /*3.BOOLEAN - The boolean type has only two values: true and false.
+                This type is commonly used to store yes/no values: true means “yes, correct”,
+                 and false means “no, incorrect”.*/
+
+            let nameFieldChecked = true; // yes, name field is checked
+            let ageFieldChecked = false; // no, age field is not checked
+            //Boolean values also come as a result of comparisons:
+
+            let isGreater = 4 > 1;
+            console.log({nameFieldChecked,ageFieldChecked,isGreater});
+            
+            /*4.The typeof operator returns the type of the argument. 
+                It’s useful when we want to process values of different types differently or 
+                just want to do a quick check.
+                It supports two forms of syntax:
+                1.As an operator: typeof x.
+                2.As a function: typeof(x).*/
+            console.log(typeof 0);                 // "number"
+            console.log(typeof 10n);               // "bigint"
+            console.log(typeof true);              // "boolean"
+            console.log(typeof "foo");             // "string"
+            console.log(typeof Symbol("id"));      // "symbol"
+            console.log(typeof Math);              // "object"  (1)
+            console.log(typeof null);              // "object"  (2)
+            console.log(typeof alert);             // "function"(3)
+
+
+    </script>
+</body>
+</html>
